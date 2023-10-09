@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Toolbar.ToolbarPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/toolbar_page_logo"
+                android:layout_width="60dp"
+                android:layout_height="51dp"
+                android:src="@drawable/scsg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.379"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/toolbar_page_logo1"
+                android:layout_width="180dp"
+                android:layout_height="43dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="DASHBOARD"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.513"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/toolbar_page_logo2"
+                android:layout_width="422dp"
+                android:layout_height="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.942"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-6dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar_page_frag_container"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <fragment
+                android:id="@+id/toolbar_page_toolbar"
+                class="com.example.csit321.ui.login.Toolbar.ToolbarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                tools:ignore="MissingConstraints"
+                tools:layout="@layout/fragment_toolbar_account"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar_page_frag_container1"
+            android:layout_width="match_parent"
+            android:layout_height="550dp" >
+
+            <ImageView
+                android:id="@+id/toolbar_page_logo3"
+                android:layout_width="371dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/reclayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button3"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_eventlogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.269"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.324"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button2"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_videologo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button4"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_notificationlogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.269"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.565"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button8"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_aboutuslogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.81"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button7"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_involvedlogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.269"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.81"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button5"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_savedlogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.324"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="SAVE"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.736"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.429" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="HOME"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.279"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="EVENT"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.282"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.429" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button6"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_supportlogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.565"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="VIDEO"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.743"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="GET INVOLVED"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.896" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview7"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="ABOUT US"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.752"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.896" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="NOTIFICATION"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.257"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.66" />
+
+            <TextView
+                android:id="@+id/toolbar_page_textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="right|center_horizontal|left|center_vertical"
+                android:singleLine="true"
+                android:text="SUPPORT"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.756"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.66" />
+
+            <ImageButton
+                android:id="@+id/toolbar_page_button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/toolbar_homelogo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/toolbar_page_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</RelativeLayout>

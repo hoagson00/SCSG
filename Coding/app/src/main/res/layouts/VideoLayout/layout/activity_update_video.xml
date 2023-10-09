@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Video.UpdateVideo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="701dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/update_video_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/back_button_logo"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.4"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/update_video_logo1"
+                    android:layout_width="220dp"
+                    android:layout_height="39dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="UPDATE VIDEO"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.57"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.419"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/update_video_logo2"
+                    android:layout_width="422dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.97"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-6dp" />
+
+                <ImageView
+                    android:id="@+id/update_video_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="51dp"
+                    android:src="@drawable/scsg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.139"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.32"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/update_video_button4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/delete_logo"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintBottom_toTopOf="@+id/update_video_logo2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toEndOf="@+id/update_video_logo1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/update_video_logo3"
+                    android:layout_width="420dp"
+                    android:layout_height="550dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/rectangle_background_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.375"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_video_edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:hint="Title*"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:textSize="23dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_video_logo3"
+                    app:layout_constraintEnd_toEndOf="@+id/update_video_logo3"
+                    app:layout_constraintStart_toStartOf="@+id/update_video_logo3"
+                    app:layout_constraintTop_toTopOf="@+id/update_video_logo3"
+                    app:layout_constraintVertical_bias="0.035" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_video_edittext1"
+                    android:layout_width="300dp"
+                    android:layout_height="240dp"
+                    android:ems="10"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="top"
+                    android:hint="Description*"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_video_logo3"
+                    app:layout_constraintEnd_toEndOf="@+id/update_video_logo3"
+                    app:layout_constraintStart_toStartOf="@+id/update_video_logo3"
+                    app:layout_constraintTop_toBottomOf="@+id/update_video_edittext"
+                    app:layout_constraintVertical_bias="0.031" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_video_edittext2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:fontFamily="@font/ubuntu_light_italic"
+                    android:hint="Link*"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_video_logo3"
+                    app:layout_constraintEnd_toEndOf="@+id/update_video_logo3"
+                    app:layout_constraintStart_toStartOf="@+id/update_video_logo3"
+                    app:layout_constraintTop_toBottomOf="@+id/update_video_edittext1"
+                    app:layout_constraintVertical_bias="0.048" />
+
+                <Button
+                    android:id="@+id/update_video_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1877F2"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.809"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/update_video_edittext2"
+                    app:layout_constraintVertical_bias="0.355" />
+
+                <TextView
+                    android:id="@+id/update_video_textview4"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/ubuntu_italic"
+                    android:gravity="right|center_horizontal|left|center_vertical"
+                    android:singleLine="true"
+                    android:text="*: Required Field"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.283"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/update_video_edittext2"
+                    app:layout_constraintVertical_bias="0.042" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/update_video_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

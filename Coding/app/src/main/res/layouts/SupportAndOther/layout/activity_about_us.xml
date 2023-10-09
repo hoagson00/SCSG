@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Support.AboutUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <Button
+                android:id="@+id/about_us_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/back_button_logo"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.024"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/about_us_logo"
+                android:layout_width="147dp"
+                android:layout_height="39dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="ABOUT US"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.419"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/about_us_logo1"
+                android:layout_width="422dp"
+                android:layout_height="34dp"
+                android:src="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.849"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-6dp" />
+
+            <ImageView
+                android:id="@+id/about_us_logo2"
+                android:layout_width="60dp"
+                android:layout_height="51dp"
+                android:src="@drawable/scsg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.139"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="592dp">
+
+            <ImageButton
+                android:id="@+id/about_us_button6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/about_us_facerbook"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.786"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/about_us_button7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/about_us_youtube"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.288"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.786"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/about_us_button8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/about_us_instagram"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.436"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.786"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/about_us_button1"
+                android:layout_width="280dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Our History"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.029"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/about_us_button2"
+                android:layout_width="280dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Who we are"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.162"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/about_us_button3"
+                android:layout_width="280dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Our team"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.299"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/about_us_button4"
+                android:layout_width="280dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Our Founder"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.443"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/about_us_button5"
+                android:layout_width="280dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Essence model"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.58"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/about_us_button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1877F2"
+                android:text="Donate now"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.873"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.797"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/post_detail_textView8"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:foregroundGravity="center"
+                android:gravity="left"
+                android:text="PHONE : 0415 238 990"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.907" />
+
+            <TextView
+                android:id="@+id/post_detail_textView9"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:foregroundGravity="center"
+                android:gravity="left"
+                android:text="PO BOX 366, UNANDERRA NSW 2526"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.703"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.959" />
+
+            <TextView
+                android:id="@+id/post_detail_textView5"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:foregroundGravity="center"
+                android:gravity="left"
+                android:text="EMAIL US"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.855" />
+
+            <TextView
+                android:id="@+id/post_detail_textView7"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:foregroundGravity="center"
+                android:gravity="left"
+                android:text="FIND US ON SOCIAL"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.355"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.695" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/about_us_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</RelativeLayout>

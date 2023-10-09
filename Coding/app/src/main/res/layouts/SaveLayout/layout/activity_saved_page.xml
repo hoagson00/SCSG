@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Save.SavedPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <Button
+                android:id="@+id/saved_page_button1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Event"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.678"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.84" />
+
+            <Button
+                android:id="@+id/saved_page_button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#1877F2"
+                android:fontFamily="@font/ubuntu_bold"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Post"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.356"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.84" />
+
+            <ImageView
+                android:id="@+id/saved_page_logo"
+                android:layout_width="60dp"
+                android:layout_height="51dp"
+                android:src="@drawable/scsg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.179"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/saved_page_logo1"
+                android:layout_width="109dp"
+                android:layout_height="43dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="SAVED"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.251"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.247"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/saved_page_logo2"
+                android:layout_width="422dp"
+                android:layout_height="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-6dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="592dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/saved_page_list"
+                android:layout_width="match_parent"
+                android:layout_height="596dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/saved_page_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</RelativeLayout>

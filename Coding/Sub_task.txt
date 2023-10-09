@@ -1,0 +1,4 @@
+Check bug:
+-Send notification
+-Phone login
+-Send notification when post

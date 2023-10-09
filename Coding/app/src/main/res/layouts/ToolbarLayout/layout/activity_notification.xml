@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Toolbar.Notification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="701dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                tools:ignore="MissingConstraints">
+
+
+                <Button
+                    android:id="@+id/notification_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/back_button_logo"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.4"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/notification_logo1"
+                    android:layout_width="200dp"
+                    android:layout_height="43dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="NOTIFICATION"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.413"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/notification_logo2"
+                    android:layout_width="422dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.97"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-6dp" />
+
+                <ImageView
+                    android:id="@+id/notification_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="51dp"
+                    android:src="@drawable/scsg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.139"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.32"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/event_detail_view"
+                    android:layout_width="380dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="170dp"
+                    android:minWidth="100dp"
+                    android:src="@drawable/reclayout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/notification_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:foregroundGravity="center"
+                    android:gravity="left"
+                    android:text="Receive Notification"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.232"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.076" />
+
+                <Switch
+                    android:id="@+id/notfication_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/event_detail_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.548"
+                    app:layout_constraintStart_toEndOf="@+id/notification_textview"
+                    app:layout_constraintTop_toTopOf="@+id/event_detail_view"
+                    app:layout_constraintVertical_bias="0.49" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/notification_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

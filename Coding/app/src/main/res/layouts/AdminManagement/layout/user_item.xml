@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:layout_editor_absoluteX="-15dp"
+    tools:layout_editor_absoluteY="-44dp">
+
+    <ImageView
+        android:id="@+id/user_item_logo"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:src="@drawable/reclayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/user_item_view1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:src="@drawable/reclayout"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_item_view"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/user_item_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:src="@drawable/reclayout"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/user_item_view2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:src="@drawable/reclayout"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_item_view1"
+        app:layout_constraintVertical_bias="0.333" />
+</androidx.constraintlayout.widget.ConstraintLayout>

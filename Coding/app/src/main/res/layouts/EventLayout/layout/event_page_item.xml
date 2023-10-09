@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/event_page_item_logo"
+            android:layout_width="371dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/reclayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/event_page_item_logo1"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:src="@drawable/eventexample"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_page_textView"
+            app:layout_constraintVertical_bias="0.153" />
+
+        <TextView
+            android:id="@+id/event_page_textView"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="right|center_horizontal|left|center_vertical"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
+
+        <TextView
+            android:id="@+id/event_page_textView1"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:foregroundGravity="left|center_vertical|center"
+            android:maxLines="4"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.805"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_page_textView"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/event_page_textView2"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/ubuntu_italic"
+            android:gravity="right"
+            android:maxLines="4"
+            android:text="TimeStart"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.805"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_page_textView1"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/event_page_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_italic"
+            android:gravity="left"
+            android:maxLines="4"
+            android:text="SubCount"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_page_item_logo1"
+            app:layout_constraintVertical_bias="0.106" />
+
+        <TextView
+            android:id="@+id/event_page_textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/ubuntu_italic"
+            android:gravity="left"
+            android:maxLines="4"
+            android:text="View Count"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_page_textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

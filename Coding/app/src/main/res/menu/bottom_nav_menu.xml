@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <item
+        android:title="Home"
+        android:icon = "@drawable/vector_home_logo"
+        android:id = "@+id/homelogo"/>
+    <item android:title="Video"
+        android:icon = "@drawable/vector_video_logo"
+        android:id = "@+id/videologo"/>/>
+    <item android:title="Event"
+        android:icon = "@drawable/vector_event_logo"
+        android:id = "@+id/eventlogo"/>/>
+    <item android:title="Saved"
+        android:icon = "@drawable/not_save_logo"
+        android:id = "@+id/savedlogo"/>/>
+    <item android:title="Toolbar"
+        android:icon = "@drawable/vector_toolbar_logo"
+        android:id = "@+id/toolbarlogo"/>/>
+</menu>

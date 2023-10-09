@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Newest"
+        android:id="@+id/home_page_popup_menu1"/>
+    <item
+        android:title="Most likes"
+        android:id="@+id/home_page_popup_menu2"/>
+    <item
+        android:title="Most views"
+        android:id="@+id/home_page_popup_menu3"/>
+    <item
+        android:title="Most relevant"
+        android:id="@+id/home_page_popup_menu4"/>
+</menu>

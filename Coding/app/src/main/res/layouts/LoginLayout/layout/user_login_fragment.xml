@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="416dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_login_fragment_inputtext"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@drawable/object_round_corners"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center|fill_vertical"
+
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.09"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_login_fragment_inputtext1"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@drawable/object_round_corners"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center|center_horizontal|fill_vertical"
+                android:hint="Password"
+                android:password="true"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.234"
+                tools:ignore="MissingConstraints,DuplicateClickableBoundsCheck" />
+
+            <Button
+                android:id="@+id/user_login_fragment_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/user_register_hide_logo"
+                app:layout_constraintBottom_toBottomOf="@+id/user_login_fragment_inputtext1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.882"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/user_login_fragment_inputtext1"
+                app:layout_constraintVertical_bias="0.266" />
+
+            <Button
+                android:id="@+id/user_login_fragment_button4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/user_register_show_logo"
+                app:layout_constraintBottom_toBottomOf="@+id/user_login_fragment_inputtext1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.882"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/user_login_fragment_inputtext1"
+                app:layout_constraintVertical_bias="0.242" />
+
+            <RadioButton
+                android:id="@+id/user_login_fragement_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.745"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.383" />
+
+            <Button
+                android:id="@+id/user_login_fragement_button1"
+                android:layout_width="266dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#1877F2"
+                android:fontFamily="@font/ubuntu"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.544" />
+
+            <Button
+                android:id="@+id/user_login_fragement_button2"
+                android:layout_width="266dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntu"
+                android:text="CREATE NEW ACCOUNT"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.674" />
+
+            <Button
+                android:id="@+id/user_login_fragement_button3"
+                style="@style/Theme.AppCompat.Dialog"
+                android:layout_width="231dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#FCA6A5"
+                android:stateListAnimator="@null"
+                android:text="Forgot your password?"
+                android:textColor="#5671FF"
+                android:textSize="14dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.827" />
+
+            <Button
+                android:id="@+id/user_login_fragement_button6"
+                style="@style/Theme.AppCompat.Dialog"
+                android:layout_width="231dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#FCA6A5"
+                android:stateListAnimator="@null"
+                android:text="@string/back_to_home_page"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.933" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</RelativeLayout>

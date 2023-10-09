@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Newest"
+        android:id="@+id/event_page_popup_menu1"/>
+    <item
+        android:title="Most subscribes"
+        android:id="@+id/event_page_popup_menu2"/>
+    <item
+        android:title="Most views"
+        android:id="@+id/event_page_popup_menu3"/>
+    <item
+        android:title="Most relevant"
+        android:id="@+id/event_page_popup_menu4"/>
+    <item
+        android:title="Sort by start date"
+        android:id="@+id/event_page_popup_menu5"/>
+    <item
+        android:title="Sort by expiry date"
+        android:id="@+id/event_page_popup_menu6"/>
+</menu>

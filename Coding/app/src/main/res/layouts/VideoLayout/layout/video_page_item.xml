@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/event_page_item_logo"
+            android:layout_width="371dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/reclayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.384"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/video_page_item_button1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/edit_logo"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.189"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/video_page_item_textView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <TextView
+            android:id="@+id/video_page_item_textView1"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:foregroundGravity="left|center_vertical|center"
+            android:maxLines="4"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_page_item_textView"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <TextView
+            android:id="@+id/video_page_item_textView2"
+            android:layout_width="192dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/ubuntu_italic"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="DatePosted"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.191"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_page_item_textView4"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <TextView
+            android:id="@+id/video_page_item_textView4"
+            android:layout_width="102dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_italic"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="View"
+            android:textColor="@color/red"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_page_item_textView1"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <Button
+            android:id="@+id/video_page_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1877F2"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="GO"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.834"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/video_page_item_textView1"
+            app:layout_constraintVertical_bias="0.151" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

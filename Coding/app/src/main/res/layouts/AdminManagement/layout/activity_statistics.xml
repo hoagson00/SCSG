@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Toolbar.AccountDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="701dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/statistics_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Events"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.751"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.941" />
+
+                <Button
+                    android:id="@+id/statistics_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Videos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.479"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.941" />
+
+                <Button
+                    android:id="@+id/statistics_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1877F2"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Posts"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.207"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.941" />
+
+                <ImageView
+                    android:id="@+id/statistics_logo2"
+                    android:layout_width="422dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.534"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-6dp" />
+
+                <TextView
+                    android:id="@+id/statistics_logo1"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Statistics"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.417"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.276"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/statistics_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/back_button_logo"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.041"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.248"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/statistics_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="51dp"
+                    android:src="@drawable/scsg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.139"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.191"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/statistics_view"
+                    android:layout_width="380dp"
+                    android:layout_height="0dp"
+                    android:minWidth="100dp"
+                    android:src="@drawable/reclayout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/statistics_view2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:src="@drawable/reclayout"
+                    android:text="Total Likes: "
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.153"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_view1"
+                    app:layout_constraintVertical_bias="0.045" />
+
+                <TextView
+                    android:id="@+id/statistics_view6"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:src="@drawable/reclayout"
+                    android:text="The post with the most likes"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.36"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_view2"
+                    app:layout_constraintVertical_bias="0.063" />
+
+                <TextView
+                    android:id="@+id/statistics_view4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:src="@drawable/reclayout"
+                    android:text="The post with the most views"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.36"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_button4"
+                    app:layout_constraintVertical_bias="0.082" />
+
+                <TextView
+                    android:id="@+id/statistics_view5"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:src="@drawable/reclayout"
+                    android:text="The most recent post"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.36"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_button5"
+                    app:layout_constraintVertical_bias="0.148" />
+
+                <TextView
+                    android:id="@+id/statistics_view3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:src="@drawable/reclayout"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.77"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_view1"
+                    app:layout_constraintVertical_bias="0.045" />
+
+                <TextView
+                    android:id="@+id/statistics_view1"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:foregroundGravity="center"
+                    android:gravity="left"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.22"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.03" />
+
+                <Button
+                    android:id="@+id/statistics_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:maxLines="3"
+                    android:text="Button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/statistics_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_view6"
+                    app:layout_constraintVertical_bias="0.011" />
+
+                <Button
+                    android:id="@+id/statistics_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:maxLines="3"
+                    android:text="Button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/statistics_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_view4"
+                    app:layout_constraintVertical_bias="0.022" />
+
+                <Button
+                    android:id="@+id/statistics_button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:maxLines="3"
+                    android:text="Button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/statistics_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistics_view5"
+                    app:layout_constraintVertical_bias="0.137" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/statistics_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

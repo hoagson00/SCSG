@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.Post.PostDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="701dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/new_post_button"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/back_button_logo"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.4"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/new_post_logo1"
+                    android:layout_width="147dp"
+                    android:layout_height="39dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="NEW POST"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.42"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.419"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/new_post_logo2"
+                    android:layout_width="422dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.97"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-6dp" />
+
+                <ImageView
+                    android:id="@+id/new_post_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="51dp"
+                    android:src="@drawable/scsg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.139"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.32"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/new_post_logo3"
+                    android:layout_width="420dp"
+                    android:layout_height="580dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/rectangle_background_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.375"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_post_edittext"
+                    android:layout_width="340dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:hint="Title*"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:textSize="23dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/new_post_logo3"
+                    app:layout_constraintEnd_toEndOf="@+id/new_post_logo3"
+                    app:layout_constraintStart_toStartOf="@+id/new_post_logo3"
+                    app:layout_constraintTop_toTopOf="@+id/new_post_logo3"
+                    app:layout_constraintVertical_bias="0.035" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_post_edittext1"
+                    android:layout_width="340dp"
+                    android:layout_height="240dp"
+                    android:ems="10"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="top"
+                    android:hint="Description*"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/new_post_logo3"
+                    app:layout_constraintEnd_toEndOf="@+id/new_post_logo3"
+                    app:layout_constraintStart_toStartOf="@+id/new_post_logo3"
+                    app:layout_constraintTop_toBottomOf="@+id/new_post_edittext"
+                    app:layout_constraintVertical_bias="0.031" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_post_edittext2"
+                    android:layout_width="340dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:fontFamily="@font/ubuntu_light_italic"
+                    android:hint="Hashtag"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/new_post_logo3"
+                    app:layout_constraintEnd_toEndOf="@+id/new_post_logo3"
+                    app:layout_constraintStart_toStartOf="@+id/new_post_logo3"
+                    app:layout_constraintTop_toBottomOf="@+id/new_post_edittext1"
+                    app:layout_constraintVertical_bias="0.048" />
+
+                <Button
+                    android:id="@+id/new_post_button2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/ubuntu_medium_italic"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/add_image"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/new_post_logo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/new_post_logo4"
+                    app:layout_constraintTop_toBottomOf="@+id/new_post_edittext2"
+                    app:layout_constraintVertical_bias="0.233" />
+
+                <ImageView
+                    android:id="@+id/new_post_logo4"
+                    android:layout_width="123dp"
+                    android:layout_height="101dp"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_post_edittext2"
+                    app:layout_constraintVertical_bias="0.171"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/new_post_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1877F2"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="Post"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.809"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_post_edittext2"
+                    app:layout_constraintVertical_bias="0.846" />
+
+                <TextView
+                    android:id="@+id/new_post_textview4"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/ubuntu_italic"
+                    android:gravity="right|center_horizontal|left|center_vertical"
+                    android:singleLine="true"
+                    android:text="*: Required Field"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.222"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_post_edittext2"
+                    app:layout_constraintVertical_bias="0.693" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/new_post_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_nav_menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

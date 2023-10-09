@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CSIT321</string>
+    <string name="your_string"><u>Back to Log in?</u></string>
+    <string name="forgot_but"><u>Forgot Password?</u></string>
+    <string name="add_image"><u>Add Image?</u></string>
+    <string name="choose_another_image"><u>Choose another image?</u></string>
+    <string name="menu_back"><u>Back to menu?</u></string>
+    <string name="title_activity_admin_login">AdminLogin</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="log_in"><u>Log In?</u></string>
+    <string name="register_new_account"><u>Register New Account?</u></string>
+    <string name="back_to_home_page"><u>Back to Home Page</u></string>
+    <string name="do_you_want_to_log_in"><u>Do you want to Sign In?</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
